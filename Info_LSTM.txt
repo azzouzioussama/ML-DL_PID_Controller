@@ -1,0 +1,52 @@
+### df10-64-linear=67
+### df10-32-tanh-RMSprop=70
+### df10-32-tanh-Adam=70
+### df10-64-tanh-RMSprop=69.9057/ 2:15.3
+### df10-64-tanh-Adam=69.6090/1:56.5
+### df10-64-selu-RMSprop=69.6912/ 2:11.8
+### df10-64-selu-Adam=67.9248/1:52.1
+### df10-64-softsign-Adam=68.1439/1:56.8
+### df10-64-softsign-RMSprop=68.4295/2:16.2
+### df10-64-swish-RMSprop=69.4517/2:15.4
+### df10-64-swish-Adam=67.0473/2
+### df10-64-gelu-RMSprop=70.8107/2:17.4 ====4
+### df10-64-gelu-Adam=65.00/2:00
+### df10-64-linear-RMSprop=70.2882/2:13.1 ====3
+### df10-128-linear-RMSprop=71.9139/1:10.6 ====2
+### df10-128-gelu-RMSprop=70.2904/1:12.4 ==== 5
+### df10-128-tanh-RMSprop=72.4476/ 1:11.1 ====1
+### 
+'''
+df-100:
+313/313 [==============================] - 4s 11ms/step - loss: 5.8351 - mae: 0.8155
+Mean Squared Error (MSE): [5.835089206695557, 0.8154655694961548]
+313/313 [==============================] - 4s 10ms/step
+Root Mean Squared Error (RMSE): 2.415592437169351
+r2 score: 0.631152646592777
+mean absolute error: 0.8154656
+
+df-50:
+313/313 [==============================] - 3s 8ms/step - loss: 5.5165 - mae: 0.7141
+Mean Squared Error (MSE): [5.516490936279297, 0.7140687704086304]
+313/313 [==============================] - 3s 6ms/step
+Root Mean Squared Error (RMSE): 2.348720924802472
+r2 score: 0.6510991328155114
+mean absolute error: 0.71406853
+
+df_nr-50:
+313/313 [==============================] - 3s 8ms/step - loss: 2.3069e-04 - mae: 0.0035
+Mean Squared Error (MSE): [0.00023068657901603729, 0.0035223043523728848]
+313/313 [==============================] - 3s 7ms/step
+Root Mean Squared Error (RMSE): 0.015188367465151122
+r2 score: 0.6909360464702449
+mean absolute error: 0.0035223044
+
+df_nr-50:
+# bs = 64
+313/313 [==============================] - 2s 8ms/step - loss: 2.1524e-04 - mae: 0.0053
+Mean Squared Error (MSE): [0.00021523812029045075, 0.005318245384842157]
+313/313 [==============================] - 3s 6ms/step
+Root Mean Squared Error (RMSE): 0.014670996877999845
+r2 score: 0.7116331257484318
+mean absolute error: 0.005318248
+'''
